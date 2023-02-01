@@ -5,8 +5,8 @@ module.exports = param =>{
 	const { speakersService } = param
 
 	router.get('/', async (req,res)=>{
-		const speakers = await speakersService.getList()
-		return res.json(speakers)
+		 const speakers = await speakersService.getList()
+		 return res.json(speakers)
 	});
 
 	router.get('/:shortname', (req,res)=>{
